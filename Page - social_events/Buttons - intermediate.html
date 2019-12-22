@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:800&display=swap');
+
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        .matrix {
+          width: 100%;
+          height: 80%;
+        }
+        .containerA {
+            float: left;
+            display: inline-block;
+            position: relative;
+            width: 48.75%;
+            height: 47.5%;
+            padding-bottom: 2.5%
+        }
+
+        .containerB {
+            float: right;
+            display: inline-block;
+            position: relative;
+            width: 48.75%;
+            height: 47.5%;
+            padding-bottom: 2.5%;
+
+        }
+        .containerC{
+          position: relative;
+          text-align: left;
+          height: 10%;
+          margin-top: 4%;
+          margin-left: 1%;
+          width: 100%;
+        }
+        .centered{
+          position: absolute;
+          color: white;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .button {
+            position: relative;
+            background-color: #5BA260;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            height: 38%;
+            width: 18.5%;
+            cursor: pointer;
+            font-size: 1.5vw;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 50px;
+            text-shadow: none;
+            letter-spacing: 2px;
+        }
+
+        @media screen and (max-width: 400px) {
+            .button {
+                height: 100%;
+                width: 31.5%;
+                margin-left: 5%;
+                font-size: 3.6vw;
+            }
+        }
+        a {
+
+            position: relative;
+            text-align: center;
+            padding: 0;
+            text-decoration: none;
+            display: block;
+            /* The image used */
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            color: white;
+
+            /* Full height */
+            height: 100%;
+            width: 100%;
+
+            /* Center and scale the image nicely */
+            font-size: 5vw;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+
+            text-shadow: 0 0 32px black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="matrix">
+    <div class="containerA">
+    <a style="background-image: url('https://static.wixstatic.com/media/bcb068_a0cb7d12ef254626ad15a19fba1f56f1~mv2.jpg');" href="https://www.slonewman.org/newman-olympics" target="_top">
+        Newman Olympics
+    </a>
+    </div>
+    <div class="containerB">
+    <a style="background-image: url('https://static.wixstatic.com/media/bcb068_b6eb7413f5364b00bb0e7917480d6d71~mv2.jpg');" href="https://www.slonewman.org/pasta-night" target="_top">
+        Pasta Night
+    </a>
+    </div>
+    <div class="containerA">
+    <a style="background-image: url('https://static.wixstatic.com/media/bcb068_812568c6e20640709351a536f2c355eb~mv2.jpg');" href="https://www.slonewman.org/game-night" target="_top">
+        Game Night
+    </a>
+    </div>
+    <div class="containerB">
+    <a style="background-image: url('https://static.wixstatic.com/media/bcb068_7b737c8228234014a068345460e8209c~mv2.jpg/v1/fill/w_600,h_300/Newman%20Dance.jpg');" href="https://www.slonewman.org/newman-dance" target="_top">
+        Newman Dance
+    </a>
+    </div>
+  </div>
+    <div class="containerC">
+        <a class="button" href="https://www.slonewman.org" target="_top">
+            <div class="centered">BACK</div>
+        </a>
+    </div>
+</body>
+
+</html>
